@@ -1,0 +1,23 @@
+This is the sansculotte vj patch written in puredata dataflow.
+
+It is based around two channel joystick control.
+There is a clip based and a generative/automatic aspect to it,
+both can be combined to avoid obvious repetition.
+
+it has been developed from 2010 on and it is based on an earlier
+program that translated joystick control into MIDI signals.
+
+requirements:
+- pd-extended
+- a video-card that supports GLSL
+- usb joystick (or ps2 jyostick with a usb-adaptor)
+
+installation:
+- in [pd init] set the paths to match your system
+- in videodir.pd set/add the subfolders of your video_dir
+   - the setting "init_banks" in [pd init] is the number of subdirectories
+
+runtime_configuration:
+- open [joystick] and select the correct hid device for each slot
+
+TODO: detilaed instructions

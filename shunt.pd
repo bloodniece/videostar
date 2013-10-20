@@ -1,0 +1,18 @@
+#N canvas 1097 477 450 300 10;
+#X obj 49 36 inlet;
+#X obj 280 41 inlet;
+#X obj 49 248 outlet;
+#X obj 159 248 outlet;
+#X text 111 34 approximate gridflow's shunt object;
+#X obj 204 183 == 0;
+#X obj 94 166 i;
+#X obj 49 210 spigot 1;
+#X obj 159 215 spigot 0;
+#X connect 0 0 7 0;
+#X connect 0 0 8 0;
+#X connect 1 0 6 0;
+#X connect 5 0 8 1;
+#X connect 6 0 5 0;
+#X connect 6 0 7 1;
+#X connect 7 0 2 0;
+#X connect 8 0 3 0;
